@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     // Reset Information when id of reset is clicked
     $("#reset").click(function () {
-        $("displayinfo").html(``);
+        $("#displayinfo").html(``);
         $("li").css("color", "black");
     });
 });
