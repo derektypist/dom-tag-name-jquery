@@ -19,8 +19,14 @@ $(document).ready(function() {
         txt += `The celebrities are ${listItemsArray}.<p>`;
         txt += `${celebrity} is selected at random.`;
         // Display Information in the Browser
-        $("#display").html(txt);
+        $("#displayinfo").html(txt);
         // Change the Colour of the List Item
         $("li:eq(" + randomIndex + ")").css("color","#D2386C");
+    });
+
+    // Reset Information when id of reset is clicked
+    $("#reset").click(function() {
+        $("displayinfo").html(``);
+        $("li").css("color","black");
     });
 });
