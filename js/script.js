@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     // Get Information when id of random is clicked
-    $("#random").click(function() {
+    $("#random").click(function () {
         // Set Up Variable
         let txt = "";
         // Get the List Items
@@ -9,7 +9,7 @@ $(document).ready(function() {
         // Get the Number of List Items
         const listItemsLength = listItems.length;
         // Create a new Array
-        const listItemsArray = Array(listItemsLength).fill("").map((_,i) => listItems[i].innerHTML);
+        const listItemsArray = Array(listItemsLength).fill("").map((_, i) => listItems[i].innerHTML);
         // Get the Random Index
         const randomIndex = Math.floor(Math.random() * listItemsLength);
         // Get the Random Celebrity
@@ -20,13 +20,13 @@ $(document).ready(function() {
         txt += `${celebrity} is selected at random.`;
         // Display Information in the Browser
         $("#displayinfo").html(txt);
-        // Change the Colour of the List Item
-        $("li:eq(" + randomIndex + ")").css("color","#D2386C");
+        // Change the Colour of the List Item equal to Random Index
+        $("li:eq(" + randomIndex + ")").css("color", "#D2386C");
     });
 
     // Reset Information when id of reset is clicked
-    $("#reset").click(function() {
+    $("#reset").click(function () {
         $("displayinfo").html(``);
-        $("li").css("color","black");
+        $("li").css("color", "black");
     });
 });
