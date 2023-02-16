@@ -4,8 +4,9 @@ $(document).ready(function () {
     $("#random").click(function () {
         // Set Up Variable
         let txt = "";
-        // Get the List Items
+        // Get the List Items and make sure all list items are black in colour
         const listItems = $("li");
+        listItems.css("color","black");
         // Get the Number of List Items
         const listItemsLength = listItems.length;
         // Create a new Array
