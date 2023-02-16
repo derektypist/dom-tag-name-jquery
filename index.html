@@ -17,5 +17,32 @@
         <h1>Document Object Model (DOM)</h1>
         <h2>Elements by Tag Name with jQuery</h2>
     </header>
+
+    <!-- Set Up Main Body -->
+    <main class="container-fluid">
+        <section>
+            <!-- Get Heading for the Section -->
+            <h3>Global Celebrities</h3>
+            <!-- Get Unordered List of Celebrities -->
+            <ul id="celebs">
+                <li>Anna Richardson</li>
+                <li>Ilaria D'Amico</li>
+                <li>Kate Garraway</li>
+                <li>Kimberly Guilfoyle</li>
+                <li>Ruth Langsford</li>
+                <li>Susanna Reid</li>
+                <li>Victoria Beckham</li>
+            </ul>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button class="btn btn-info" id="random">Get Random Celebrity</button>
+                <button class="btn btn-warning" id="reset"></button>
+            </article>
+
+            <!-- Display Information -->
+            <article id="displayinfo"></article>
+        </section>
+    </main>
 </body>
 </html>
